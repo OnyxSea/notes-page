@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms in Practice - Create a Contact Me Form</title>
+  </head>
+  <body>
+    <h1>Forms in Practice - Create a Contact Me Form</h1>
+      <p>Now we want to structure our form so it looks like a proper Contact Me Form.</p>
+    <ol>
+      <li>We want to remove password, replace with email</li>
+      <li>New input type = email</li>
+      <li>Also remove the input type="color"</li>
+      <li>We want to ask them about their email, and the text Message</li>
+      <li>We need to use something outside of input to make the Message larger</li>
+      <li>It's a HTML text element named text area</li>
+      <li>Follows the following syntax</li>
+      <ul>
+        <li>(textarea name="name" rows="10" cols="30")</li>
+        <li>You can define the initial default sizes</li>
+        <li>If you click submit, it brings you back to the home page, because we linked the form there</li>
+      </ul>
+      <li>How can we have it publish into the internet?</li>
+      <ul>
+        <li>Change the action into "mailto:info@londonappbrewery.com"</li>
+        <li>Wouldn't work, unless you have a mail application installed by default</li>
+      </ul>
+      <li>Go to Chrome Settings, set sites can ask to handle protocols</li>
+
+      <li>Open a new tab, head to gmail.com</li>
+      <li>Click allow mail.google.com to handle all links</li>
+      <li>At the moment, all the text that emerges when you attempt to email is weird. To solve this, we need an encoding type</li>
+      <ul>
+        <li>From the "form", remove class="", add enctype="text/plain"</li>
+        <li>This way, all the text will be plain text</li>
+      </ul>
+      <li>Then you can change the email accordingly before emailing</li>
+
+
+    </ol>
+    <h1><a href="index.html">Back to Contents Page</a></h1>
+  </body>
+</html>
